@@ -1,0 +1,123 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    width: 210px;
+    height: 380px;
+    margin-bottom: 3.2rem;
+    position: relative;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.card__rating {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem;
+    background: #ff2e4f;
+    position: absolute;
+    border-radius: 0px 0px 0.6rem 0px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.card__rating-star {
+    color: #fff;
+}
+
+.card__rating-vote {
+    margin: 0;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.card__image{
+    height: 295px;
+    width: 210px;
+    overflow: hidden;
+}
+
+.img-loaded{
+    border-radius: 6px;
+}
+
+img.img-loaded:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+a {
+    background-color: transparent;
+}
+
+.card__details{
+    color: white;
+}
+
+.card__details h4 {
+    margin-bottom: 0;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 0.5rem;
+}
+
+.card__footer p {
+    margin: 0;
+}
+
+.button--add-favorite {
+    padding: 5px;
+    background: transparent;
+    font-size: 1rem;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.tooltip {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    padding: 1.2rem;
+    font-size: 12px;
+    background: #0086e0;
+    border-radius: 0.6rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 10;
+}
+
+.tooltip span {
+    color: #fff;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0086e0 transparent transparent transparent;
+}
