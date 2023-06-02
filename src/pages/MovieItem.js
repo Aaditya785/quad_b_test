@@ -4,7 +4,7 @@ import "../style/movieItem.css";
 
 const MovieItem = ({ item }) => {
     const { show } = item;
-    console.log(show);
+    console.log("THe Tbdb:- ",show.externals.imdb);
     return (
         <>
             <div className="card">
@@ -12,7 +12,7 @@ const MovieItem = ({ item }) => {
                     ⭐
                     <h4 className="card__rating-vote">{Number(show.rating.average || "6.5").toFixed(1)}</h4>
                 </div>
-                <Link to={`/${show.externals.thetvdb}`}>
+                <Link to={`/${show.externals.imdb}`}>
                     <div className="card__image">
                         <img className="img-loaded" alt={show.name} data-key="238" src={show.image ? show.image.medium : "https://upload.wikimedia.org///6/65/Image-Placeholder.svg"
                         } />

@@ -11,6 +11,7 @@ const Landing = () => {
       const req = await fetch("https://api.tvmaze.com/search/shows?q=all");
       const res = await req.json();
       setData(res);
+      console.log("from landing:- ",data)
     };
     fetchData();
   }, []);
