@@ -17,12 +17,14 @@ const Landing = () => {
   }, []);
 
   return (
+    <>
+    <h1 style={{color : "white", textAlign: "center",}}>Your Search Result For : All</h1>
     <div className='main'> 
       {data.map((item) => {
         console.log(item.show);
         return <MovieItem item={item} key={item.show.id} />;
       })}
-    </div>
+    </div></>
   );
 }
 
