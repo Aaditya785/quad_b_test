@@ -1,0 +1,87 @@
+.max_width {
+    max-width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.main {
+    display: flex;
+}
+
+.back_button {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.genre_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 0.75rem;
+    height: 80vh;
+    position: relative;
+}
+
+.summary_box {
+    border: 1px solid;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+
+
+.show_name {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.genre_types {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 0.75rem;
+}
+
+
+.details {
+    font-size: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+
+.sum_box {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.detail_heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.sum_story {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: white;
+}

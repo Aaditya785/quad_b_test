@@ -14,7 +14,7 @@ const Landing = () => {
       console.log("from landing:- ",data)
     };
     fetchData();
-  }, []);
+  }, [data]);
 
   return (
     <>
